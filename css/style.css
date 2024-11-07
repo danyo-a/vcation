@@ -1,0 +1,67 @@
+
+html{
+  
+  background-image: url('../image/danyo-walking-whitblack.jpeg');
+  background-repeat:no-repeat;
+
+  
+
+}
+body{
+  direction:rtl;
+  padding: 0px;
+  margin:0px;
+  
+  
+}
+.header-text{
+  color:black;
+  font-size:2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-right: .5rem;
+  text-align:center;
+  padding:0px;
+  margin: 0px;
+}
+.image-header{
+  height:10em;
+  padding-right: .5rem;
+
+  
+}
+.header{
+  height: 100px;
+  background-color: rgb(94, 94, 94);
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+  
+}
+.header-ul{
+  text-align:center;
+}
+.header-li{
+  list-style-type: none;
+  display: inline-block;
+  border:1px solid silver;
+  border-radius:5px;
+  padding:5px;
+  margin-left:10px;
+  cursor:pointer;
+  width: 80px;
+  
+  
+}
+.header-li:hover{
+  background-color:black;
+  color: white;
+  
+}
+
+@media (min-width:750px) {
+  html{
+   background-image:url('../image/danyo-diving.jpeg')
+    
+
+  }
+  
+}
