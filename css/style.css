@@ -88,11 +88,23 @@ p{
 h1{
   text-align: center;
 }
-@media (max-width:400px){
+@media (max-width:500px){
 img{
-  width:80px;
+  width:200px;
   
 }
+.header-li{
+  width:50px;
+  font-size: 12px;
+  padding-left:1px;
+
+}
+.main{
+  font-size:12px;
+  padding:5px;
+  
+}
+
 }
 @media (min-width:750px) {
   html{
