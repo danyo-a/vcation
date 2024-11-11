@@ -56,7 +56,38 @@ body{
   color: white;
   
 }
+.main{
+  background-color: rgb(103, 101, 101);
+}
+.main-p{
+  color: black;
+  font-size:18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+}
+.a-link{
+  text-decoration: none;
+  font:20px;
+  color:black;
+
+}
+.a-link:hover{
+ color:white;
+ 
+}
+hr {
+  border: none;
+  height: 4px;
+  
+  border-top: 2px dashed #000; /* Blue dashed line */
+}
+p{
+  font-size:20px;
+  
+}
+h1{
+  text-align: center;
+}
 @media (min-width:750px) {
   html{
    background-image:url('../image/danyo-diving.jpeg')
