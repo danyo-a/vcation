@@ -125,7 +125,7 @@ img{
     background-color:white;
     color:black;
   }
-  h1,h3,h2{color:rgb(189, 153, 127)}
+  h1,h3,h2{color:rgb(167, 111, 71)}
   h2{
     font-size:20px;
     
@@ -133,7 +133,7 @@ img{
   p{
     font-size:15px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: antiquewhite;
+    background-color: rgb(161, 148, 131);
     margin:0px;
   }
 
@@ -145,7 +145,7 @@ img{
 
   }
   p{
-    margin: 0px;
+    margin:0px;
   }
   
   

@@ -7,14 +7,54 @@
   <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-  <header>
-    <ul class="header-ul">
-      <li class="header-li"><a href="Eilat.html" target="_blanck">eilat-אילת</a></li>
-      <li class="header-li"><a href="Eilat.html" target="_blanck">sri lanka - סרי לנקה</a></li>
-      <li class="header-li"><a href="Eilat.html" target="_blanck">india-הודו</a></li>
+  <div class="header">
+   
+     <div style="position: relative;"><a href="Eilat.html" target="_blanck">eilat <img class="israel-flag" src="/image/israel-flag.png" alt="israel-flag"></a></div>
+     <div style="position: relative;"><a href="Eilat.html" target="_blanck">india <img class="india-flag" src="/image/india-flag.png" alt="israel-flag"></a></div>
+     <div style="position: relative;"><a href="Eilat.html" target="_blanck">sri lanka <img class="srilanka-flag" src="/image/sri-lanka-flag.png" alt="israel-flag"></a></div>
+    
+  </div>
+  <div class="slider-container">
+    <div class="slider">
+
+      <img class="image-vacatio" src="/image/danyo-diving.jpeg" alt="diving">
+      <img class="image-vacatio" src="/image/danyo-div-self.jpeg" alt="diving">
+      <img class="image-vacatio" src="/image/roni-on-sowrface.jpeg" alt="diving">
+      <img class="image-vacatio" src="/image/danyo-roni-mirror.jpeg" alt="diving">
       
-    </ul>
-  </header>
+    </div>
+    <button class="next-button">next</button>
+    <button class="prev-button">prev</button>
+
+  </div>
+  <div class="main-container">
+
+  </div>
   
+  
+  <script>
+    let index =0;
+    const images = document.querySelectorAll('.slider img');
+    const totalImages = images.length;
+    function moveToNextImage(){
+      index = (index+1)% totalImages;
+      const offset = -index *100;
+      document.querySelector('.slider').style.transform= `translateX(${offset}%)`;
+    }
+    function moveToPrevImage(){
+      index = (index+3)% totalImages;
+      const offset = -index *100;
+      document.querySelector('.slider').style.transform= `translateX(${offset}%)`;
+    }
+   setInterval(moveToNextImage,3000);
+    document.querySelector('.next-button').addEventListener('click',()=>{
+      moveToNextImage();
+
+    });
+    document.querySelector('.prev-button').addEventListener('click',()=>{
+      moveToPrevImage();
+
+    })
+  </script>
 </body>
 </html>
