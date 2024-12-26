@@ -1,144 +1,17 @@
 *{
-  padding:0px;
-  margin:0px;
-  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  margin:0;
+  padding:0;
 }
 body{
-  font-family:Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
-}
-.header{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background-color: rgb(236, 218, 218);
-  width:100%;
-  height:80px;
-}
-.header a{
-  color:black;
-  text-decoration:none;
-  background-color:none;
-  border:1px solid black;
-  border-radius:5px;
-  padding:2px;
-  margin-left:10px;
-  width:90px;
-  text-align:center;
-}
-.header a:hover{
-  background-color:black;
-  color:white;
-}
-.slider-container{
-  width:20%;
-  height:200px;
-  border-radius:10px;
-  overflow:hidden;
-  box-shadow:0 4px 8px rgb(0,0,0,0.1);
-  margin-inline:40%;
-  margin-top:10px;
+  height:1000px;
+  padding-top:60px;
+  padding-left: 200px;
+  scroll-behavior:smooth ;
   
 }
-.slider{
-  display:flex;
-  transition:transform 0.5s ease-in-out;
-  background-color:black;
-}
-.slider img {
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-button{
-  position: absolute;
-  top:35%;
-  z-index:2;
-  width:30px;
-  height:30px;
-  border: none;
-  border-radius:10%;
-  padding:4px;
-  font-size:10px;
-  background-color:gray;
-  
-}
-button:hover{
-  cursor: pointer;
-}
-.next-button{
-  right:35%;
-
-}
-.prev-button{
- left:35%;
-}
-.main-container{
-  width:100%;
-  height:100px;
-  background-color:white;
-}
-.israel-flag{
-  
-  height:30px;
-  width:60px;
-  border-radius:5px;
-  position: absolute;
-  top:0x;
-  right: 3px;
-  opacity:0;
-  
-  
-  
-}
-.israel-flag:hover{
-  opacity: 1;
-  transition: transform 0.5s ease-in-out;
-  transform: translateY(-30px);
-
-}
-.india-flag{
-  
-  height:30px;
-  width:60px;
-  border-radius:5px;
-  position: absolute;
-  top:0x;
-  right: 3px;
-  opacity:0;
-  
-  
-  
-}
-.india-flag:hover{
-  opacity: 1;
-  transition: transform 0.5s ease-in-out;
-  transform: translateY(-30px);
-
-}
-.srilanka-flag{
-  
-  height:30px;
-  width:60px;
-  border-radius:5px;
-  position: absolute;
-  top:0x;
-  right: 3px;
-  opacity:0;
-  
-  
-  
-}
-.srilanka-flag:hover{
-  opacity: 1;
-  transition: transform 0.5s ease-in-out;
-  transform: translateY(-30px);
-
-}
-@media (max-width:768px){
-  .slider-container{
-    width:60%;
-  
-
+@media (max-width:799px){
+  body{
+    padding-left:0px;
   }
 }

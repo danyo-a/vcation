@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .img {
+      display:none;
+      height:200px;
+     
+        
+    }
+    .i{
+      display:block;
+    }
+    .ball{
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      border-radius: 50%;
+     
+    
+      
+    }
+    .litlle-ball{
+      width: 10px;
+      height: 10px;
+      background-color: blue;
+      border-radius: 50%; 
+      transition:transform 3s;
+    }
+    .ball:hover .litlle-ball{
+      
+      animation: move 2s ease-in-out 2s infinite;
+    }
+    @keyframes move{
+      0%{
+        transform:translateX(0);
+      }
+      10%{
+        transform:translateY(100px);
+      }
+      20%{
+        transform:translatex(100px);
+      }
+      40%{
+        transform:translateY(200px);
+      }
+      50%{
+        transform:translateX(1000px);
+      }
+      100%{
+        transform:translateX(0);
+      }
+    }
+    
+
+  </style>
+</head>
+<body>
+  <h1>slider</h1>
+  <div>
+    <img class="img i" src="images/danyo-div-self.jpeg" alt="">
+    <img class="img" src="images/danyo-roni-mirror.jpeg" alt="">
+    <img class="img" src="images/roni-on-banch.jpeg" alt="">
+    <img class="img" src="images/danyo-walking-whitblack.jpeg" alt="">
+   <div class="ball"><div class="litlle-ball"></div></div>
+   
+
+  </div>
+  <script>
+    const images = document.querySelectorAll('.img');
+    
+    let count = 0;
+    let index = 0;
+    setInterval(() => {
+      count ++;
+      images[index].style.display = 'none';
+      index = (index + 1) % images.length;
+      images[index].style.display = 'block';
+      console.log(index);
+      console.log(count);
+    }, 2000);
+  </script>
+</body>
+</html>
