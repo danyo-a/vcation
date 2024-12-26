@@ -18,6 +18,4 @@ document.querySelector('.menu-burger').addEventListener('click', () => {
     document.querySelector('.sidenav').style.width = '200px';
     return isclicked = true;
   }
-  
-
 });
